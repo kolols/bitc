@@ -1,0 +1,27 @@
+#include <iostream>
+#include <vector>
+///////////////////////////////////////////////////////////////
+/// Wypisz liczby w odwrotnej kolejnosci niz zostaly podane ///
+///////////////////////////////////////////////////////////////
+using namespace std;
+int main () {
+    ////////////////////////////
+    /// Tutaj wpisz swój kod
+    ////////////////////////////
+     int a, b;
+     cin>>a;
+    vector <int> liczby;
+     for(int i=0; i<=a; i++){
+         cin>>b;
+         liczby.push_back(b);
+     }
+     for(int i=a-1; i>=0; i--){
+         
+         cout<<liczby[i]<<" ";
+     }
+    int number_count; 
+    std::cin >> number_count;
+
+
+    return 0;
+}
