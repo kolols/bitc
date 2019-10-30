@@ -1,0 +1,16 @@
+/// Czy czegoś tu nie trzeba?
+#include <iostream>
+///
+/// Zacznijmy od przywitanaia się z językiem.
+///
+using namespace std;
+int main () {
+    std::string a="Hello ",b ;
+    std::cout<<"Podaj imie "<<std::endl;
+    std::cin>>b;
+    ////////////////////////////
+    /// Tutaj wpisz swój kod
+    ////////////////////////////
+    std::cout<<"elo "<<b<<std::endl;
+    return 0;
+}
