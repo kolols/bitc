@@ -1,0 +1,45 @@
+#include <iostream>
+
+/////////////////////////////////////////////////////////////////
+/// Napisz kalkulator prostych wyrazen artymetycznych postaci ///
+/// a + b; a * b; a - b; a / b; a % b; a ^ b; dla double a,b; ///
+/////////////////////////////////////////////////////////////////
+
+int main () {
+    ////////////////////////////
+    /// Tutaj wpisz swój kod
+    ////////////////////////////
+    double a,b,p=1;
+    char c;
+     for(;;){
+
+        std::cin>>a;
+        std::cin>>c;
+        std::cin>>b;
+        if(c=='+')
+            std::cout<<a+b<<std::endl;
+        else if(c=='*')
+            std::cout<<a*b<<std::endl;
+        else if(c=='-')
+            std::cout<<a-b<<std::endl;
+        else if(c=='/')
+            std::cout<<a/b<<std::endl;
+        else if(c=='%'){
+            int s,d;
+            s=a;
+            d=b;
+            std::cout<<s%d<<std::endl;
+        }
+        else if(c=='^'){
+            for(int i=b; i>0; --i)
+            {
+                p=p*a;
+            }
+            std::cout<<p<<std::endl;
+        }
+        break;
+     }
+
+
+    return 0;
+}
